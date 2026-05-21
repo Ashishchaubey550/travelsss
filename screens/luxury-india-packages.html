@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container": "#eeeeee",
+              "error": "#ba1a1a",
+              "surface-variant": "#e2e2e2",
+              "on-secondary": "#ffffff",
+              "on-surface-variant": "#46464d",
+              "surface-container-highest": "#e2e2e2",
+              "surface-tint": "#575d78",
+              "secondary": "#735c00",
+              "inverse-primary": "#bfc5e4",
+              "error-container": "#ffdad6",
+              "on-error-container": "#93000a",
+              "surface-bright": "#f9f9f9",
+              "surface-container-high": "#e8e8e8",
+              "on-secondary-container": "#745c00",
+              "surface": "#f9f9f9",
+              "surface-dim": "#dadada",
+              "on-background": "#1a1c1c",
+              "on-primary-fixed": "#141a32",
+              "tertiary-container": "#1b1c1c",
+              "secondary-fixed-dim": "#e9c349",
+              "secondary-fixed": "#ffe088",
+              "primary-fixed-dim": "#bfc5e4",
+              "primary-fixed": "#dce1ff",
+              "surface-container-lowest": "#ffffff",
+              "tertiary": "#000000",
+              "tertiary-fixed-dim": "#c8c6c6",
+              "inverse-on-surface": "#f0f1f1",
+              "inverse-surface": "#2f3131",
+              "on-primary-container": "#7c839f",
+              "on-tertiary-container": "#858383",
+              "tertiary-fixed": "#e4e2e1",
+              "on-tertiary-fixed-variant": "#474747",
+              "on-tertiary-fixed": "#1b1c1c",
+              "on-primary": "#ffffff",
+              "on-secondary-fixed": "#241a00",
+              "secondary-container": "#fed65b",
+              "outline-variant": "#c6c6ce",
+              "primary-container": "#141a32",
+              "on-surface": "#1a1c1c",
+              "background": "#f9f9f9",
+              "on-secondary-fixed-variant": "#574500",
+              "on-primary-fixed-variant": "#3f465f",
+              "primary": "#000000",
+              "outline": "#76767e",
+              "surface-container-low": "#f3f3f4",
+              "on-error": "#ffffff",
+              "on-tertiary": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift-bg {
+            background: linear-gradient(to bottom, rgba(249, 249, 249, 1), rgba(243, 243, 244, 1));
+        }
+        .animate-bounce-subtle {
+            animation: bounce-subtle 3s infinite;
+        }
+        @keyframes bounce-subtle {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-black font-headline">The Global Concierge</div>
+<div class="hidden md:flex space-x-8 items-center font-headline tracking-tight">
+<a class="text-slate-500 hover:text-black transition-colors" href="#">Home</a>
+<a class="text-slate-500 hover:text-black transition-colors" href="#">Fleet</a>
+<a class="text-black font-semibold border-b-2 border-yellow-700 pb-1" href="#">Packages</a>
+<a class="text-slate-500 hover:text-black transition-colors" href="#">About</a>
+<a class="text-slate-500 hover:text-black transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-black hover:text-yellow-700 transition-all scale-95 active:scale-90">search</button>
+<button class="material-symbols-outlined text-black hover:text-yellow-700 transition-all scale-95 active:scale-90">shopping_bag</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-20 px-8 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-secondary mb-4 block">Curated Experiences</span>
+<h1 class="font-headline text-5xl md:text-7xl leading-tight mb-6">India: A Tapestry of <br/><span class="italic text-secondary">Timeless Elegance</span></h1>
+<p class="font-body text-lg text-on-surface-variant max-w-lg mb-8 leading-relaxed">From the snow-capped Himalayan peaks to the serene emerald backwaters of the south, discover a subcontinent of profound beauty and private luxury.</p>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] bg-surface-container-low rounded-tl-full overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="The Taj Mahal in morning mist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB36EgAWowpiMpC8brQyesTNMAIBdROYwLgLJ39D123SqU5T47ySez03SfWNuDyM6SgyGSQsk-F4LYhEvoLXCJF9dELxwoYb7txdHldSHV7WullVoPh9P9mn98izSojSxa3lVwYH2nF_hu7uCXHOLGKAzkls6nNkGpAw5E7tiTo1l5ToJZWoxXORiYMoUaJ0zdhgjq1l44mKZk5LGM87Gdr7XTq06L4sZ_ZwBHcwFVNNQIe82nuoqeY3VgVF5b_uf1WIz82eRiZX8pv"/>
+</div>
+<div class="absolute -bottom-10 -left-10 w-64 aspect-square bg-white p-4 shadow-xl hidden lg:block">
+<img class="w-full h-full object-cover" data-alt="Traditional Rajasthani palace architecture details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAWctYx-pMQYvD8yxhsmOjCRFJtkaASCwm6CMzfgqQEPQH1m_euZy2caxzs57YPYD-fknjVLiZuAX3vcL_Px8NCy52bbdlLOE0WTuQp1Nh-pW-_eatSfBvQ3LJfeRQSDrTX0hu6luu8EwpXZBG2L8htCPmo7f0B9ClRCMOebAP10moLVp1e5b_5s50WNq2R7Cuz7ojniWyLU8inKU6ls-oixIBZKkOzUyMvR5KN7NmdxygYqhc53EQ0dRztmwbjd6I3A7LlGRv7XkB"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Filters Section -->
+<section class="px-8 py-12 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="flex flex-wrap gap-8">
+<div class="space-y-3">
+<label class="font-label text-[11px] uppercase tracking-widest text-outline">Type of Journey</label>
+<div class="flex gap-2">
+<button class="px-6 py-2 bg-primary text-on-primary text-sm font-medium">All Packages</button>
+<button class="px-6 py-2 bg-white text-on-surface text-sm font-medium hover:bg-surface-container transition-colors">Adventure</button>
+<button class="px-6 py-2 bg-white text-on-surface text-sm font-medium hover:bg-surface-container transition-colors">Relaxation</button>
+<button class="px-6 py-2 bg-white text-on-surface text-sm font-medium hover:bg-surface-container transition-colors">Heritage</button>
+</div>
+</div>
+<div class="space-y-3">
+<label class="font-label text-[11px] uppercase tracking-widest text-outline">Duration</label>
+<div class="relative">
+<select class="appearance-none bg-white border-none py-2 pl-6 pr-12 text-sm font-medium focus:ring-1 focus:ring-secondary w-full md:w-48">
+<option>Any Duration</option>
+<option>1-5 Days</option>
+<option>6-10 Days</option>
+<option>14+ Days</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-outline text-lg">expand_more</span>
+</div>
+</div>
+</div>
+<div class="text-sm font-body text-on-surface-variant italic">
+                Showing 12 exclusive itineraries
+            </div>
+</div>
+</section>
+<!-- Packages Grid -->
+<main class="max-w-screen-2xl mx-auto px-8 py-24">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+<!-- Card 1: Golden Triangle -->
+<article class="group">
+<div class="relative aspect-[3/4] overflow-hidden rounded-tl-full bg-surface-container mb-6 shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Majestic Taj Mahal at sunrise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDGsdn78_Cb1seD6H3UI89umbt2CXrd3u-kygGIJx89UWVAzGj4Elgnto24lcu3kCJ4WAEsLKXjQWTXv6LIYIdgsvb__ZO4FlNS8VnMfYiqxUQQVZbAr_8ewZ1KNhNGJTC4v67T0FN0MCg8tVpEa1RdjZxVP1RO3X_R6a0Nd9KW9cYhnQXUgwKKM6pp1jymuZVEXuAS11tQs54Jyq_njPUzLRXpHS35fzUhIjhctqM1xOfl3BbeM8eNr7L7YH9TQBM0sz0-eUCcaGR"/>
+<div class="absolute top-6 right-6 bg-white/90 backdrop-blur-md px-4 py-1 text-[10px] font-label uppercase tracking-widest">Heritage</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="font-headline text-2xl group-hover:text-secondary transition-colors">Golden Triangle</h3>
+<span class="font-body text-sm font-semibold tracking-tighter">7 Days</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">A royal traverse through Delhi, Agra, and Jaipur. Experience the Mughal grandeur and Rajputana elegance in ultimate privacy.</p>
+<div class="flex items-center justify-between pt-4">
+<div class="flex flex-col">
+<span class="font-label text-[10px] uppercase text-outline tracking-wider">Starting From</span>
+<span class="font-headline text-xl text-primary">$4,200</span>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 text-sm font-medium hover:bg-secondary transition-all">Book Now</button>
+</div>
+</div>
+</article>
+<!-- Card 2: Kerala Backwaters -->
+<article class="group mt-12 md:mt-0 lg:mt-12">
+<div class="relative aspect-[3/4] overflow-hidden rounded-tl-full bg-surface-container mb-6 shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Traditional houseboat on emerald green Kerala backwaters" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwpCHVBQVIyflOLeKoFKMLUXqiWhOmMZP5Y-VUVfZrFvaLjlzsQc_Nlz8h3iZGqculmo4UDERMGQfr0r9G7rDGHBi7brUhet-HX8ThXqDaigeT6_t1Y15qo1HwOnQOPeCR7OngMM4GF2uoiRMzwvMOpYQA6vVqJvinudZg9PCNItUvQSbA0LiZLd0tXFrfRQnNYhrz5B8clIwT5oQ4xRrsZsooCRzJLMXQ9E2x2rDTpXfKFrPf6X_mdJu2NCNd3RNwQPINC3kwA6_3"/>
+<div class="absolute top-6 right-6 bg-white/90 backdrop-blur-md px-4 py-1 text-[10px] font-label uppercase tracking-widest">Relaxation</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="font-headline text-2xl group-hover:text-secondary transition-colors">Kerala Backwaters</h3>
+<span class="font-body text-sm font-semibold tracking-tighter">5 Days</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">Unwind on a bespoke private houseboat journey through the palm-fringed canals and tranquil lagoons of God's Own Country.</p>
+<div class="flex items-center justify-between pt-4">
+<div class="flex flex-col">
+<span class="font-label text-[10px] uppercase text-outline tracking-wider">Starting From</span>
+<span class="font-headline text-xl text-primary">$3,850</span>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 text-sm font-medium hover:bg-secondary transition-all">Book Now</button>
+</div>
+</div>
+</article>
+<!-- Card 3: Himalayan Escape -->
+<article class="group">
+<div class="relative aspect-[3/4] overflow-hidden rounded-tl-full bg-surface-container mb-6 shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Snow capped Himalayan mountains in Ladakh" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9laMuuIuCGMxxnCBICk-aDB0iIB-rNDF688TtcqM2k2TFHTM8FcBODwbfTj7tYBpD2zJbXnZxVL49wd8pqGCSww6Yqf68CQeGn8QKJ_ymiUumIGQrJLFimbylBCKSVMek1adAyvFrjvHZOaWJVEDvirJXVglaDt4DU5KRbKbbKEwFReoLYcwdXjJ65bxUImAffKRTI1qnXrHhKex6JPU6rx3o2rxir7i8ugyVYLvrrlWqCQQveK8Np8grp5Nqr51Tafqq7uOmGqHa"/>
+<div class="absolute top-6 right-6 bg-white/90 backdrop-blur-md px-4 py-1 text-[10px] font-label uppercase tracking-widest">Adventure</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="font-headline text-2xl group-hover:text-secondary transition-colors">Himalayan Escape</h3>
+<span class="font-body text-sm font-semibold tracking-tighter">10 Days</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">Journey to the roof of the world. Private glamping in Ladakh and guided spiritual retreats in the shadows of giants.</p>
+<div class="flex items-center justify-between pt-4">
+<div class="flex flex-col">
+<span class="font-label text-[10px] uppercase text-outline tracking-wider">Starting From</span>
+<span class="font-headline text-xl text-primary">$5,600</span>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 text-sm font-medium hover:bg-secondary transition-all">Book Now</button>
+</div>
+</div>
+</article>
+<!-- Card 4: Royal Rajasthan -->
+<article class="group lg:mt-12">
+<div class="relative aspect-[3/4] overflow-hidden rounded-tl-full bg-surface-container mb-6 shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Golden sand dunes and camel safari in Jaisalmer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTiJJ20Xs44QafCEhxtrw_AD5yYNcJwEuTP9xQJCox0u_aiOQvEYFwFUR_hg7xn3T2We93YIzYDZjK_lVm1bkoG4QVvoM4NdsPtzlO5aiqPAogMzGo0ecA0Xv4BgFYW0p0KclteJWmSdjYB753HXFQlk_tNItPbJGXhKdwtsWmNwOy5BOsNlFe3Q5SgAnS3c8gxweezsQrhgFBeGco7WqBys2MNFXbq0IL3vpTO-4HUL6afOxxE4BYVZrXgUiRgpejDutkxX01mtlh"/>
+<div class="absolute top-6 right-6 bg-white/90 backdrop-blur-md px-4 py-1 text-[10px] font-label uppercase tracking-widest">Heritage</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="font-headline text-2xl group-hover:text-secondary transition-colors">Royal Rajasthan</h3>
+<span class="font-body text-sm font-semibold tracking-tighter">12 Days</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">Desert luxury and palace living. Explore the Blue City of Jodhpur and the shimmering lakes of Udaipur like royalty.</p>
+<div class="flex items-center justify-between pt-4">
+<div class="flex flex-col">
+<span class="font-label text-[10px] uppercase text-outline tracking-wider">Starting From</span>
+<span class="font-headline text-xl text-primary">$7,200</span>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 text-sm font-medium hover:bg-secondary transition-all">Book Now</button>
+</div>
+</div>
+</article>
+<!-- Card 5: Varanasi Spiritual Journey -->
+<article class="group">
+<div class="relative aspect-[3/4] overflow-hidden rounded-tl-full bg-surface-container mb-6 shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Evening Ganga Aarti ceremony at Varanasi ghats" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5zrTJp5xYhuv8kNrHKXsbmx-3hU7JdZ5onwfww5LXfmTw4r_2Rye_WvVjc4PBtgAWPomlgIyOYGDJBA3PrNi72MnHynYzHJo1UjhtXWpix72Qtc5t2DnxLzmRmb0R-qpxTI-2ao43JAYyr7i5UtTJi0QDaQ8GeCk7KA7JgZEk0CkmWFVyPFcaFYMTFkQSuZAZMf_9KMlbGoMeg2rJfgJQDJXuytvUjOZDwjRnxGIcMDjJ51PidctxoFi-nzF56ZBQdfWiuSvgZmmo"/>
+<div class="absolute top-6 right-6 bg-white/90 backdrop-blur-md px-4 py-1 text-[10px] font-label uppercase tracking-widest">Heritage</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="font-headline text-2xl group-hover:text-secondary transition-colors">Varanasi Soul</h3>
+<span class="font-body text-sm font-semibold tracking-tighter">4 Days</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">A profound exploration of the world's oldest living city. Private sunrise boat rides and intimate Aarti ceremonies.</p>
+<div class="flex items-center justify-between pt-4">
+<div class="flex flex-col">
+<span class="font-label text-[10px] uppercase text-outline tracking-wider">Starting From</span>
+<span class="font-headline text-xl text-primary">$2,900</span>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 text-sm font-medium hover:bg-secondary transition-all">Book Now</button>
+</div>
+</div>
+</article>
+<!-- Card 6: Wild Central India -->
+<article class="group mt-12 md:mt-0 lg:mt-12">
+<div class="relative aspect-[3/4] overflow-hidden rounded-tl-full bg-surface-container mb-6 shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Bengal tiger in the tall grass of Kanha National Park" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-VlaVQmm4rByLugu1KyHNuTSHZbccYI5PsWVlbfPA3VC5C5ZGFHgZRWTB3nF_Wk4pc8EsoTqaWTMfNKyMB0o5K8T5cd1xMlsKyiJstJe9QQa0SPDmkWGMpfUUFijkVrukXfHyygNhon5FLwH2zz1RN8a2hbTBhERlfwnE0AzSRHTlMsiMAUESZH-mPrjFivAvlfUex0zelLsiwXYsMF_zCeMIPNcsVH2EWdQekCfPYoRbePPAdnZlk0UKvovjmeHEIyFGDdIAq59M"/>
+<div class="absolute top-6 right-6 bg-white/90 backdrop-blur-md px-4 py-1 text-[10px] font-label uppercase tracking-widest">Adventure</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="font-headline text-2xl group-hover:text-secondary transition-colors">Tiger Trails</h3>
+<span class="font-body text-sm font-semibold tracking-tighter">8 Days</span>
+</div>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-4">Luxury wildlife safaris in Bandhavgarh and Kanha. Witness the majesty of the Bengal Tiger in its natural kingdom.</p>
+<div class="flex items-center justify-between pt-4">
+<div class="flex flex-col">
+<span class="font-label text-[10px] uppercase text-outline tracking-wider">Starting From</span>
+<span class="font-headline text-xl text-primary">$5,100</span>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 text-sm font-medium hover:bg-secondary transition-all">Book Now</button>
+</div>
+</div>
+</article>
+</div>
+</main>
+<!-- WhatsApp Floating Action -->
+<a class="fixed bottom-8 left-8 rounded-full w-14 h-14 flex items-center justify-center z-50 bg-green-600 shadow-2xl shadow-green-900/20 hover:scale-110 hover:rotate-12 transition-all animate-bounce-subtle" href="#">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">chat</span>
+</a>
+<!-- Footer -->
+<footer class="w-full pt-16 pb-8 bg-slate-900 dark:bg-black font-body text-sm tracking-wide">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<h2 class="text-xl font-headline text-white mb-6">The Global Concierge</h2>
+<p class="text-slate-400 mb-6">Curating extraordinary journeys for the discerning traveler since 2008.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-yellow-600 cursor-pointer">social_leaderboard</span>
+<span class="material-symbols-outlined text-yellow-600 cursor-pointer">potted_plant</span>
+<span class="material-symbols-outlined text-yellow-600 cursor-pointer">star</span>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="text-white font-semibold uppercase text-xs tracking-[0.2em] mb-6">Experience</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform inline-block" href="#">Fleet Gallery</a></li>
+<li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform inline-block" href="#">Member Portal</a></li>
+<li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform inline-block" href="#">Private Jet Charters</a></li>
+<li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform inline-block" href="#">Luxury Villas</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-white font-semibold uppercase text-xs tracking-[0.2em] mb-6">Company</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform inline-block" href="#">About Us</a></li>
+<li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform inline-block" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform inline-block" href="#">Terms of Service</a></li>
+<li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform inline-block" href="#">Press Kit</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-white font-semibold uppercase text-xs tracking-[0.2em] mb-6">Newsletter</h4>
+<p class="text-slate-400 mb-4">Subscribe for invitation-only itineraries.</p>
+<div class="flex">
+<input class="bg-slate-800 border-none text-white text-xs px-4 py-3 w-full focus:ring-1 focus:ring-yellow-600" placeholder="Email Address" type="email"/>
+<button class="bg-yellow-600 text-slate-900 px-4 py-3">
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto px-12 mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500">© 2024 The Global Concierge. All Rights Reserved.</p>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-white" href="#">Cookie Policy</a>
+<a class="text-slate-500 hover:text-white" href="#">Sitemap</a>
+</div>
+</div>
+</footer>
+</body></html>

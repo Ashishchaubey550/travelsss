@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Noto Serif", Georgia, serif;
+  --font-sans: "Manrope", system-ui, sans-serif;
+
+  /* Exact Stitch design tokens */
+  --color-primary: #000000;
+  --color-primary-container: #141a32;
+  --color-secondary: #735c00;
+  --color-secondary-dim: #e9c349;
+  --color-secondary-container: #fed65b;
+  --color-secondary-fixed: #ffe088;
+
+  --color-surface: #f9f9f9;
+  --color-surface-low: #f3f3f4;
+  --color-surface-container: #eeeeee;
+  --color-surface-high: #e8e8e8;
+  --color-surface-white: #ffffff;
+  --color-surface-variant: #e2e2e2;
+  --color-surface-dim: #dadada;
+
+  --color-on-surface: #1a1c1c;
+  --color-on-surface-variant: #46464d;
+  --color-on-primary-container: #7c839f;
+  --color-outline: #76767e;
+  --color-outline-variant: #c6c6ce;
+
+  --color-inverse-primary: #bfc5e4;
+  --color-inverse-surface: #2f3131;
+  --color-primary-fixed: #dce1ff;
+  --color-primary-fixed-dim: #bfc5e4;
+
+  /* Aliases for convenience */
+  --color-navy: #141a32;
+  --color-gold: #e9c349;
+  --color-gold-label: #735c00;
+  --color-gold-light: #ffe088;
+  --color-gold-muted: #735c00;
+  --color-cream: #f9f9f9;
+  --color-text: #1a1c1c;
+  --color-text-muted: #46464d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-on-surface);
+  background-color: var(--color-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scroll reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Primary CTA button — black bg, white text */
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--color-secondary);
+  transform: translateY(-1px);
+}
+
+/* Secondary CTA — glass style */
+.btn-glass {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Tonal shift background (Stitch exact) */
+.tonal-shift-bg {
+  background: linear-gradient(to bottom, rgba(249, 249, 249, 0.8), rgba(243, 243, 244, 0.9));
+}
+
+/* Gold label tag — uses secondary (#735c00) */
+.label-tag {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-secondary);
+}
+
+/* Section spacing (32 units = 8rem) */
+.section-pad {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+@media (max-width: 768px) {
+  .section-pad {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+/* Asymmetric clip from Stitch */
+.asymmetric-clip {
+  border-top-left-radius: 2rem;
+}

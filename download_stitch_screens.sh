@@ -1,0 +1,38 @@
+#!/bin/bash
+mkdir -p screens
+
+# Screen 1
+echo "Downloading Screen 1..."
+curl -sL "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2M0ZDFjMzE1NjU0ODQ0ZGJiNWYzZDNhMWY4MzA1MTE3EgsSBxCIlK3Y7BkYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzE4NzkyMjU5MTQ1NTMyODU5MA&filename=&opi=89354086" -o screens/luxury-travel-homepage.html
+curl -sL "https://lh3.googleusercontent.com/aida/ADBb0uh9pUztsoCjLDMKgErtK10UyXdw7G02KiuuDEMjPEdKQB6IDVs4D7KzAZzdrr5FU4tQ7aEuJAUQ4SUw05Wd6KAyyj4oCwl4IvJmhXi4ARuUxwhJUFlEiOcuSRd3g3A7PSwG6VMITVNZflhOpVLGMWZ_0y1k7bK_QNLkbofU8f6P0w5UahHhkyaOR4FiQ8GXHNPpODE37B9M21wIiTeb8tde5n-O7rhoGfpOaNbyMR39ZveKfJJqdX-RFnw" -o screens/luxury-travel-homepage.png
+
+# Screen 2
+echo "Downloading Screen 2..."
+curl -sL "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzNiZTQyZjk0OGUyMjRiMWY4M2ExZGI2NjM3MTg4MmRkEgsSBxCIlK3Y7BkYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzE4NzkyMjU5MTQ1NTMyODU5MA&filename=&opi=89354086" -o screens/elite-vehicle-fleet.html
+curl -sL "https://lh3.googleusercontent.com/aida/ADBb0uikVZiFyCOzDoQ4BoESMEOw6dHA2NTUl8vV7CNF5odAWG6SHjFwNVU2aXQ5ZSQjee-bK9nlYMe06vqToKd_H7PpFqXINoLKFoAEdRYyjWXL-sWhtUEWEosBOwA5w-J99bmymP-SIydTk3A4WjCC8qa14WjeEZb8ahZ-uIX-2PiJ2AhYoK1oyZB3HJQMiXPTkvpQn40ZfSnYTWucEqQs9XAMtjJyj2dSe61DLvINelaoczNqLLE1dc-DDEI" -o screens/elite-vehicle-fleet.png
+
+# Screen 3
+echo "Downloading Screen 3..."
+curl -sL "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzYxYmJjYWUwZmYyMDQyZDliY2Y3ZjQ1NjMxZjY1ZmIxEgsSBxCIlK3Y7BkYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzE4NzkyMjU5MTQ1NTMyODU5MA&filename=&opi=89354086" -o screens/project-requirements.html
+
+# Screen 4
+echo "Downloading Screen 4..."
+curl -sL "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzcxMTc2NGNjODQ1ZjQ4NjI5YjgzZTQ5ZTZkMjQxMzM1EgsSBxCIlK3Y7BkYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzE4NzkyMjU5MTQ1NTMyODU5MA&filename=&opi=89354086" -o screens/office-location-contact.html
+curl -sL "https://lh3.googleusercontent.com/aida/ADBb0ui0Tj0GSCd43VVEdK5-bBmdNbcMxIxuBk4ZEBJfW9WL4QjLml2ET5DeX7xztIK3SgkJf69QNj6LTqh4dSo476t5CBCcoo1ZKhHgSLAiSBWg8ICIurLOQyGrmQE1EEb1r6aselTO9jCaS-fIqok-FwhscZrJmSPMSZy0kvFm0F8l2pKQVZLpyhAQ8hr7nrtX2WbEG2Yp1aF4I3C_qVTboNV7jot5wxlayFnSKWf4vNY9N4X22GVOY_n-9TU" -o screens/office-location-contact.png
+
+# Screen 5
+echo "Downloading Screen 5..."
+curl -sL "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2RmYjJiMjJjZTI1NzQ4NDg5YjRhMzM5M2UyYWU4YThjEgsSBxCIlK3Y7BkYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzE4NzkyMjU5MTQ1NTMyODU5MA&filename=&opi=89354086" -o screens/secure-booking-system.html
+curl -sL "https://lh3.googleusercontent.com/aida/ADBb0uh2hxzn74QbROw0m7--yP99CzmMosWNNO4hb88nFd5jVxnvFUtqBnC5KrTOj-WG0-_q2bVrlgt4s95E14Y_z0SVIQR_GXlu6kTmV8U75ZUnhIvcaZT6IGJNJy06ew2PzxcQoVb5v8yFA30BCMRhUC8nY0Ou_-ALWN2GG-a_2NpcyDDw8y5mFWBrkFUIo_LSW309ZbOCysuLUQh5S7toUdjoSwIb121rsAHd-5xIB0unLUVUxN2hAnQpKtSO" -o screens/secure-booking-system.png
+
+# Screen 6
+echo "Downloading Screen 6..."
+curl -sL "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzVjYzMyMGUyYmUzYjQ3YmU4NGI5OTZmNzI1YWU0OTQ4EgsSBxCIlK3Y7BkYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzE4NzkyMjU5MTQ1NTMyODU5MA&filename=&opi=89354086" -o screens/luxury-travel-homepage-updated.html
+curl -sL "https://lh3.googleusercontent.com/aida/ADBb0uj-wHrL_mcmd-iJTn6bqPzEdXc5bxVgRV1yIZSYTE3flSmxsAzU0QkR-6BYj9OwrETt4yh2I_RkGEsyAj5gvLoqKVyE4ahjRmrnNkJ7Rmm79L42e6P-aWsreHRZ9R3jHbW6umHlsMi9RkpTSbLIEZ0MNisovfDAsKMD8Pb3oDW7pUFTzXWlebk_OdtxlxVOtseUFHjf8uJbl7Y8IrxlekHb5c6FzYbac5AW9cLFamXKokm5o19vg1lXTe8T" -o screens/luxury-travel-homepage-updated.png
+
+# Screen 8
+echo "Downloading Screen 8..."
+curl -sL "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzczZjk3MGQwNmFiODQ5ODU4ZDU1ZmJhMDQwNDBmYjAxEgsSBxCIlK3Y7BkYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzE4NzkyMjU5MTQ1NTMyODU5MA&filename=&opi=89354086" -o screens/luxury-india-packages.html
+curl -sL "https://lh3.googleusercontent.com/aida/ADBb0ujdeborA873kRJUNO45xiR4qzdRYRYnv-rAwqXVbWG2_1PuBGKbs6jyqCUz_AHRNXXk2AsbUjjdxDQW9xEU2xbCYlf-XB3LqZbPe7CJXGibPvNTpvcDUO7PlinZxz33b0rDriZ20DjSCB3joHi2NSv58uT-M0_3bW0h_GAFhK4izJUHL6GKPH8lPbmTY6TjOg5iqC3JalJ_-5REP1n5ihc7JCYHXQ3WKoLYV7tUhElJ63dO2c_7MFs3lrk" -o screens/luxury-india-packages.png
+
+echo "Done."

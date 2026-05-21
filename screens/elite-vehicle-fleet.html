@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fleet Showcase | The Global Concierge</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container": "#eeeeee",
+              "error": "#ba1a1a",
+              "surface-variant": "#e2e2e2",
+              "on-secondary": "#ffffff",
+              "on-surface-variant": "#46464d",
+              "surface-container-highest": "#e2e2e2",
+              "surface-tint": "#575d78",
+              "secondary": "#735c00",
+              "inverse-primary": "#bfc5e4",
+              "error-container": "#ffdad6",
+              "on-error-container": "#93000a",
+              "surface-bright": "#f9f9f9",
+              "surface-container-high": "#e8e8e8",
+              "on-secondary-container": "#745c00",
+              "surface": "#f9f9f9",
+              "surface-dim": "#dadada",
+              "on-background": "#1a1c1c",
+              "on-primary-fixed": "#141a32",
+              "tertiary-container": "#1b1c1c",
+              "secondary-fixed-dim": "#e9c349",
+              "secondary-fixed": "#ffe088",
+              "primary-fixed-dim": "#bfc5e4",
+              "primary-fixed": "#dce1ff",
+              "surface-container-lowest": "#ffffff",
+              "tertiary": "#000000",
+              "tertiary-fixed-dim": "#c8c6c6",
+              "inverse-on-surface": "#f0f1f1",
+              "inverse-surface": "#2f3131",
+              "on-primary-container": "#7c839f",
+              "on-tertiary-container": "#858383",
+              "tertiary-fixed": "#e4e2e1",
+              "on-tertiary-fixed-variant": "#474747",
+              "on-tertiary-fixed": "#1b1c1c",
+              "on-primary": "#ffffff",
+              "on-secondary-fixed": "#241a00",
+              "secondary-container": "#fed65b",
+              "outline-variant": "#c6c6ce",
+              "primary-container": "#141a32",
+              "on-surface": "#1a1c1c",
+              "background": "#f9f9f9",
+              "on-secondary-fixed-variant": "#574500",
+              "on-primary-fixed-variant": "#3f465f",
+              "primary": "#000000",
+              "outline": "#76767e",
+              "surface-container-low": "#f3f3f4",
+              "on-error": "#ffffff",
+              "on-tertiary": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .asymmetric-card-img {
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.125rem;
+            border-bottom-right-radius: 0.125rem;
+            border-bottom-left-radius: 0.125rem;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-black dark:text-white font-headline">
+                The Global Concierge
+            </div>
+<div class="hidden md:flex space-x-8 items-center font-['Noto_Serif'] tracking-tight">
+<a class="text-slate-500 dark:text-slate-400 hover:text-black dark:hover:text-white transition-colors" href="#">Home</a>
+<a class="text-black dark:text-white font-semibold border-b-2 border-yellow-700 pb-1" href="#">Fleet</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-black dark:hover:text-white transition-colors" href="#">Packages</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-black dark:hover:text-white transition-colors" href="#">About</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-black dark:hover:text-white transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-6">
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary transition-all" data-icon="search">search</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary transition-all" data-icon="shopping_bag">shopping_bag</span>
+</div>
+</div>
+</nav>
+<!-- Hero Header -->
+<header class="pt-32 pb-20 px-8 max-w-screen-2xl mx-auto">
+<div class="max-w-3xl">
+<span class="text-secondary font-label text-sm uppercase tracking-widest mb-4 block">Curated Excellence</span>
+<h1 class="text-5xl md:text-7xl font-headline font-bold leading-tight mb-6">Our Distinguish Fleet</h1>
+<p class="text-lg text-on-surface-variant font-light max-w-xl leading-relaxed">
+                Experience the pinnacle of luxury travel. From executive sedans to premium coaches, our fleet is meticulously maintained to provide unparalleled comfort and safety for your journey.
+            </p>
+</div>
+</header>
+<!-- Fleet Grid Section -->
+<main class="px-8 pb-32 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Innova Hycross (Featured) -->
+<div class="group bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="relative h-72 overflow-hidden">
+<img class="w-full h-full object-cover asymmetric-card-img group-hover:scale-105 transition-transform duration-700" data-alt="Luxury white Toyota Innova Hycross exterior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2miw9TlpyOrK5gVnv2ChrPQbyUKLDbnvH8MMyTkGfsnFWrtcFlAdQLIubJJ_y_RC8iFlfPnA6RzC4ENh-_adwbvs6BtSnun79s4xxGoVmPaqCISBxPsTm7oIzmBkstwWvZMZ3K3O5d1HP5ME5LSJ2q6FtVA1Dn2Ife12mYHcgI6X5MmqkAFW1zfSgesQlp7oLqS1b5tRhe7toHEvqAAgxeRkuOvoww06-fofpHk5Jw6z8JkysfrliApsGr5beX8h4-G7pgUOjgFoz"/>
+<div class="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 text-xs font-label uppercase tracking-tighter">Premium Choice</div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-bold mb-2">Innova Hycross</h3>
+<p class="text-on-surface-variant text-sm mb-6">Hybrid performance meets ultimate executive luxury.</p>
+<button class="w-full bg-primary text-on-primary py-4 font-label text-sm tracking-widest hover:bg-secondary transition-colors uppercase">View Details</button>
+</div>
+</div>
+<!-- Fortuner -->
+<div class="group bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="relative h-72 overflow-hidden">
+<img class="w-full h-full object-cover asymmetric-card-img group-hover:scale-105 transition-transform duration-700" data-alt="Black luxury Toyota Fortuner SUV" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBC9uMuY64lIt8UQslFgsNsba8rnPeBVMp-rmzPNF4xvihCwoqw1SuuZl8ROzIDzpVH30eIwrpUeGUEygl6KtNj_Fpz_TyDQYALfAFBGGzMoqENDY7x9vxwQ2xJd2vC1DjdEqvg1Kk73F2_pKQxPigXB8-g0q5M4JTVPZpczk9A-Z_Hocbcy2G-7I5ossiMYtYhtBXcPxejKcS0ECushOGXHEWZQTYaJyS5ubBr_fWshWvxfofF2bhl4jDACLyG_AJcpN9jhiMKzYlL"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-bold mb-2">Fortuner</h3>
+<p class="text-on-surface-variant text-sm mb-6">Commanding presence for rugged yet refined travel.</p>
+<button class="w-full bg-primary text-on-primary py-4 font-label text-sm tracking-widest hover:bg-secondary transition-colors uppercase">View Details</button>
+</div>
+</div>
+<!-- Volvo -->
+<div class="group bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="relative h-72 overflow-hidden">
+<img class="w-full h-full object-cover asymmetric-card-img group-hover:scale-105 transition-transform duration-700" data-alt="Sleek modern Volvo luxury coach bus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbSmrIKa1GmkMBACI6SgnBk5NI_pr6DndaWY344BDKXZSd2Y9RY_CaVVRg0Pie_jFYJT6XQG1hI4sMRwW-n99GqstsxhmWCu6XfierN1gC3jYqxywmllCR7yX3GpMXPlXZufkSv7r2J3rNPxPift0O-44Mutj_Wq_My31IQQlOA5_e7ivZD3jajP7YZEIleL4O4slHHgt14AHeBAWPLhKjBrZ5PTbvYiRh43kubw_cvHSUyyZblD8knKfSX1nvTFeV2NPWvkLH1zMK"/>
+<div class="absolute top-4 right-4 bg-secondary text-white px-3 py-1 text-xs font-label uppercase tracking-tighter">Large Groups</div>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-bold mb-2">Volvo Luxury Coach</h3>
+<p class="text-on-surface-variant text-sm mb-6">The gold standard for inter-city group travel.</p>
+<button class="w-full bg-primary text-on-primary py-4 font-label text-sm tracking-widest hover:bg-secondary transition-colors uppercase">View Details</button>
+</div>
+</div>
+<!-- Innova Crysta -->
+<div class="group bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="relative h-72 overflow-hidden">
+<img class="w-full h-full object-cover asymmetric-card-img group-hover:scale-105 transition-transform duration-700" data-alt="Silver Toyota Innova Crysta minivan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXuYtBstJNQmAxo1P4niI7h352fGhy3dPR-AA4UoR6Wm1hgb3O8i3_anXH62GmSHFZfd3wkxRq1qn4SjShdFWYHG5txeBxeAku0GjpbdYHH-Ob-yuxlkekO3mOQBLjzX0jTceJIje5gGMp8R3mQKr_SL-lBHQYG9scuCITDYYcbjMAxVPN6vwomSaREE1HY9xbA9FHRwafcACw6QcpBqBIhp6VX1C_0ToyDmwnOy8ySVuvrg5szWZsvAAUhVzaJX_C5GkIOBaXhS8W"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-bold mb-2">Innova Crysta</h3>
+<p class="text-on-surface-variant text-sm mb-6">Dependable comfort for family and corporate trips.</p>
+<button class="w-full bg-primary text-on-primary py-4 font-label text-sm tracking-widest hover:bg-secondary transition-colors uppercase">View Details</button>
+</div>
+</div>
+<!-- Force Traveller -->
+<div class="group bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="relative h-72 overflow-hidden">
+<img class="w-full h-full object-cover asymmetric-card-img group-hover:scale-105 transition-transform duration-700" data-alt="Force Traveller luxury van 13 seater" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeGsOwZB5AiEp1UI9buAsxH-Aqt1A_3phU3dkjisJvkuwOelu69kn4OGurZllGtkbt7QYI2hGLCJPBp-4tj_tyOVycZS9Eo51bfkpWA5QSk5rQE81htH0IOLXLndEYZfhFQXI54b9tn5vFz32ZGw4GtODRG_tYMTguKs4hXlTBryry69Y4oy_jl0CRX_jAjOY-v0xyqmppvnOBLash9STfgd2Cg_eSjaKgDx2AEK4cOultZyVWdcOdbo4_-HtE1o0xk1Ajv3o5wj2m"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-bold mb-2">Force Traveller</h3>
+<div class="flex gap-2 mb-4">
+<span class="text-[10px] bg-surface-container px-2 py-0.5 rounded-full">13 Seater</span>
+<span class="text-[10px] bg-surface-container px-2 py-0.5 rounded-full">17 Seater</span>
+<span class="text-[10px] bg-surface-container px-2 py-0.5 rounded-full">23 Seater</span>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 font-label text-sm tracking-widest hover:bg-secondary transition-colors uppercase">View Details</button>
+</div>
+</div>
+<!-- BharatBenz -->
+<div class="group bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="relative h-72 overflow-hidden">
+<img class="w-full h-full object-cover asymmetric-card-img group-hover:scale-105 transition-transform duration-700" data-alt="Modern BharatBenz luxury commercial bus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa3piYsgCpOw3jwxDdhoE0bkG7IgoVpGPuwLlwbrxusYXdYX1hJfk88KS3qLsEZw-2gWTYZVfuxkoxlxK2DCK5D8qoh8P41NYvz7YBmVtA6Gy6J_goNg7o_EHkqqiz8XWDRDWMdShBtDbEnz-fqTpZYRfWrileIuE4ZAK_zz278DNdAxDwcNc9itHPaTheGNCjV8UCvsjQxVXtBSk1py3l1UGaVVLdV5akaN45_M4Vqmlov9TO0rHUdch_BTsIUOZu0mcmUOe2FW4C"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-bold mb-2">BharatBenz</h3>
+<p class="text-on-surface-variant text-sm mb-6">German engineering for sophisticated large group journeys.</p>
+<button class="w-full bg-primary text-on-primary py-4 font-label text-sm tracking-widest hover:bg-secondary transition-colors uppercase">View Details</button>
+</div>
+</div>
+<!-- Scorpio -->
+<div class="group bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="relative h-72 overflow-hidden">
+<img class="w-full h-full object-cover asymmetric-card-img group-hover:scale-105 transition-transform duration-700" data-alt="Mahindra Scorpio white rugged SUV" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK1fMICxnealhPf9BzwsC8AXT18cZSkZLoSvxEX7eDBUdro2ka3aXSCwLM1aiwVn2lc_Y2cbVH36yupoJkC9MiNBMlzcWjs6KYyENGZDY-wrCKtKiF5ChCooEGoqGHpHGPhj_HcT6sK4pVkflRKmM9yo9jp0IefgyPQPWDcOHsh6aN_kr7-YGsxZZiNatSczXGHNo30E77b9x0b1lC-mkQP6Pf0Ww3kxn5iqK3cOUQ8MTYUTZcMJb0ZAWZoocnEHeqzuW3Y58SmaI9"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-bold mb-2">Scorpio</h3>
+<p class="text-on-surface-variant text-sm mb-6">The ultimate blend of power and presence.</p>
+<button class="w-full bg-primary text-on-primary py-4 font-label text-sm tracking-widest hover:bg-secondary transition-colors uppercase">View Details</button>
+</div>
+</div>
+<!-- Open Jeep -->
+<div class="group bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="relative h-72 overflow-hidden">
+<img class="w-full h-full object-cover asymmetric-card-img group-hover:scale-105 transition-transform duration-700" data-alt="Classic open-top safari jeep vehicle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDstJnwNhULvMQjlfI3RjSUJXJUBNueVPGEYU39fp78HhS9HytcYgsTR9uzrHxo410JrTM6yxs4HXo_uNtLA0F3PVTiA87Ns0uqYleUN7r3RtgkR820e2OlUpjQRP6BcrQWsZEZFVESdWkN66LPp91Am9xXsSU6oP-UGeyp3vEOBFG1-njSBKMpx9QnLgoTjjtNdYEynL5Na_7HwmlcQlJiZ9XELAtgo1IIEoYFHBTkIhtZHizOUuBGwyp1NXY44x9AWRK7QTLNWjxT"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-bold mb-2">Open Jeep</h3>
+<p class="text-on-surface-variant text-sm mb-6">For those who seek the wind and adventure.</p>
+<button class="w-full bg-primary text-on-primary py-4 font-label text-sm tracking-widest hover:bg-secondary transition-colors uppercase">View Details</button>
+</div>
+</div>
+<!-- Ertiga -->
+<div class="group bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="relative h-72 overflow-hidden">
+<img class="w-full h-full object-cover asymmetric-card-img group-hover:scale-105 transition-transform duration-700" data-alt="White Suzuki Ertiga compact MPV" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM67QhRIToXNbalvdcZfc-NHCMkfoQ-ww77of73cX9dLx3mzfeQbwundWe2b2CwqC7MWjJ2ohMuJWm4nW02OAVhCyYTguayRYz8GUG92DB0T7Ief7fzPBokfcvfo7orGYssLAmshYymjggtWX0SHIxFnetwYJfry3Ctfwx-Mr5BO8FMjMyaYS9_WJNwR7Z7hRT3_vSxtRqINpin7rgWJDOPmZkQzRivga0lZyp4qoq6jRbYTzVKvNazxdaQ3oytOGWjU881S_alVfM"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-bold mb-2">Ertiga</h3>
+<p class="text-on-surface-variant text-sm mb-6">Compact flexibility for city tours and small groups.</p>
+<button class="w-full bg-primary text-on-primary py-4 font-label text-sm tracking-widest hover:bg-secondary transition-colors uppercase">View Details</button>
+</div>
+</div>
+<!-- Dzire -->
+<div class="group bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="relative h-72 overflow-hidden">
+<img class="w-full h-full object-cover asymmetric-card-img group-hover:scale-105 transition-transform duration-700" data-alt="White Suzuki Dzire sedan car" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnHlGMa2WawmWAigq_RQbh_3kEpqPPT7XD40VOxQ6WwTotMTJhMK6T--dhzxUjPNVpZKw14zTc-oyR6nWddALiSTQlGSE5jM8MCMOYyAn6AxfqIwSCTJZxlZGg2jmwiVYeKzqA6PAweycn98To7rI0enljujjIxAQK96T3MOpKk1HBgihYXTbi54dcUkdQjnWSPzCzRhMJ9ALygRikrZDx3gXOvgL0Ba886_Mrf-Uu5Tm6peevWuH3ta25SCR3QTUdUsF4b9WW44n3"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-bold mb-2">Dzire</h3>
+<p class="text-on-surface-variant text-sm mb-6">Efficient and comfortable sedan for personal travel.</p>
+<button class="w-full bg-primary text-on-primary py-4 font-label text-sm tracking-widest hover:bg-secondary transition-colors uppercase">View Details</button>
+</div>
+</div>
+<!-- Bolero -->
+<div class="group bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="relative h-72 overflow-hidden">
+<img class="w-full h-full object-cover asymmetric-card-img group-hover:scale-105 transition-transform duration-700" data-alt="Mahindra Bolero white utility vehicle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1NyTiJnD8NfK-o9H108nK7kJ7OPjb61RnNscbGasBj4KToiCld_q4-J7arp4XKQwPdZ3B-1niRASQw8G54Fl-YturcNUwkrdKJVe4A-e77TeCO9ylEO109ST-3qI4KdGqRqX_NTPwUortSHXm500u6L6_WIuXzHAB4QF_MrnpM6SoEf8spyAGBFpDPUWhnEPEHrMvl3Os5mbIMw8PkwPHJ0B5kMaeJVJtLRQuXp3Y0hngwZzy7W8OHxpgsjwfmWUWWM_5IIT0sA6e"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-bold mb-2">Bolero</h3>
+<p class="text-on-surface-variant text-sm mb-6">Robust reliability for diverse terrains.</p>
+<button class="w-full bg-primary text-on-primary py-4 font-label text-sm tracking-widest hover:bg-secondary transition-colors uppercase">View Details</button>
+</div>
+</div>
+<!-- Mini Bus -->
+<div class="group bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="relative h-72 overflow-hidden">
+<img class="w-full h-full object-cover asymmetric-card-img group-hover:scale-105 transition-transform duration-700" data-alt="White executive mini bus transport" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0Ju_xl4z6Nz-IKMZ_dvsQid7KeiLnfyTYvxIkXhCgfwQcjouujJVqOic90v1SB_2dCAe2yoE2YaXRZmNNN74xg3cXbvJ6yZlPgQ4WjvMnBZxyvRAULaJqVu9PC5l37eeNC_DohzV95I61Zrg_aYUG8u6NPK20c3ez6yZ86CUOYNxxTYZknzihl83webAAAKnPK8n1Ubl0LSGfmzqYJlff4vXxt_mLxNjhPj15tJ-eBcrDmFFE6qf8qF940RiA0zxvqV18_xPvdiL0"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-bold mb-2">Mini Bus</h3>
+<p class="text-on-surface-variant text-sm mb-6">Spacious and versatile for medium-sized gatherings.</p>
+<button class="w-full bg-primary text-on-primary py-4 font-label text-sm tracking-widest hover:bg-secondary transition-colors uppercase">View Details</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 dark:bg-black w-full pt-16 pb-8 font-['Manrope'] text-sm tracking-wide">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-screen-2xl mx-auto">
+<div class="col-span-1">
+<div class="text-xl font-serif text-white mb-6">The Global Concierge</div>
+<p class="text-slate-400 mb-6">Bespoke travel experiences curated with precision and care for the global elite.</p>
+</div>
+<div>
+<h4 class="text-yellow-600 dark:text-yellow-500 font-bold mb-6">Company</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform inline-block" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform inline-block" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-yellow-600 dark:text-yellow-500 font-bold mb-6">Experience</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform inline-block" href="#">Fleet Gallery</a></li>
+<li><a class="text-slate-400 hover:text-white hover:translate-x-1 transition-transform inline-block" href="#">Member Portal</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-yellow-600 dark:text-yellow-500 font-bold mb-6">Newsletter</h4>
+<div class="flex">
+<input class="bg-white/5 border-none text-white focus:ring-1 focus:ring-yellow-600 w-full p-3" placeholder="Email Address" type="email"/>
+<button class="bg-yellow-600 text-white px-4 hover:bg-yellow-700 transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-white/5 text-center text-slate-500 max-w-screen-2xl mx-auto px-12">
+            © 2024 The Global Concierge. All Rights Reserved.
+        </div>
+</footer>
+<!-- BottomNavBar (WhatsApp Button) -->
+<a class="fixed bottom-8 left-8 rounded-full w-14 h-14 flex items-center justify-center z-50 bg-green-600 dark:bg-green-700 text-white shadow-2xl shadow-green-900/20 hover:scale-110 hover:rotate-12 transition-all animate-bounce-subtle" href="https://wa.me/#" title="Chat on WhatsApp">
+<span class="material-symbols-outlined text-2xl" data-icon="chat">chat</span>
+</a>
+</body></html>
