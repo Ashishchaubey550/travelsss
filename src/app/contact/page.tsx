@@ -239,18 +239,16 @@ export default function Contact() {
               <span className="material-symbols-outlined text-secondary text-4xl" style={{fontVariationSettings: "'FILL' 1"}}>call</span>
               <h4 className="font-headline text-2xl text-primary">Direct Lines</h4>
               <p className="font-body text-on-surface-variant leading-relaxed">
-                International: +91 22 4567 8900<br />
-                Member Priority: +91 22 4567 8999<br />
-                WhatsApp: +91 98765 43210
+                International: +91 7400503816<br />
+                Alternative: +91 9685968551
+                Whatsapp: 6269048092
               </p>
             </div>
             <div className="space-y-4">
               <span className="material-symbols-outlined text-secondary text-4xl" style={{fontVariationSettings: "'FILL' 1"}}>mail</span>
               <h4 className="font-headline text-2xl text-primary">Digital Correspondence</h4>
               <p className="font-body text-on-surface-variant leading-relaxed">
-                Inquiries: concierge@globalconcierge.com<br />
-                Press: media@globalconcierge.com<br />
-                Careers: talent@globalconcierge.com
+                Inquiries: Shuklatravel00@gmail.com<br />
               </p>
             </div>
           </div>

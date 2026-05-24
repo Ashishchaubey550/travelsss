@@ -242,6 +242,38 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Popular One-Way Routes */}
+      <section className="py-32 px-8 bg-slate-50">
+        <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-xl border border-slate-200 bg-white">
+          <div className="bg-[#051c48] p-6 md:p-8 flex justify-between items-center text-white">
+            <div className="flex items-center gap-4">
+              <span className="material-symbols-outlined text-yellow-500 text-3xl font-bold">route</span>
+              <h2 className="font-serif text-2xl md:text-3xl font-bold tracking-wide">Popular One-Way Routes</h2>
+            </div>
+            <span className="text-blue-800/60 font-black italic tracking-[0.2em] text-xs md:text-sm uppercase">Fixed Rates</span>
+          </div>
+          <div>
+            <div className="grid grid-cols-12 p-4 md:p-6 border-b border-slate-100 text-[10px] md:text-xs font-bold text-slate-500 tracking-widest uppercase items-center">
+              <div className="col-span-6">Route Details</div>
+              <div className="col-span-3 text-center">Swift Dzire</div>
+              <div className="col-span-3 text-center text-yellow-600">SUV / Ertiga</div>
+            </div>
+            {[
+              { route: "Bilaspur ⇌ Korba", dzire: "2000", suv: "3000" },
+              { route: "Bilaspur ⇌ Durg-Bhilai", dzire: "2500", suv: "3500" },
+              { route: "Bilaspur ⇌ Raigarh", dzire: "2500", suv: "3200" },
+              { route: "Raipur ⇌ Bilaspur", dzire: "2000", suv: "2500" },
+            ].map((item, idx) => (
+              <div key={idx} className="grid grid-cols-12 p-4 md:p-6 border-b border-slate-50 hover:bg-slate-50 transition-colors items-center">
+                <div className="col-span-6 font-bold text-base md:text-lg text-slate-800">{item.route}</div>
+                <div className="col-span-3 text-center font-bold text-lg md:text-xl text-slate-700">₹ {item.dzire}</div>
+                <div className="col-span-3 text-center font-bold text-lg md:text-xl text-slate-800">₹ {item.suv}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Our Elite Fleet - Bento Grid */}
       <section className="py-32 px-8 bg-surface">
         <div className="max-w-screen-2xl mx-auto">
@@ -256,7 +288,7 @@ export default function Home() {
             {/* Vehicle Card 1 */}
             <div className="bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-500 group">
               <div className="h-64 overflow-hidden">
-                <img alt="Innova Crysta" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Modern white Toyota Innova Crysta parked on a clean road" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwOpaMepiSeAnEjfjQ2JB8JUHTIm8FU5gX31QWfVNkYHWsb7FNRrt_PBlQxpb3z2C0rUl1GvhSVjwFLHizu3WBnIojxs1v23T5gfFSUc9GWQcX9BpylbpxWvFYR07d_MAcO7QQjTRxEwP2vl0M1rVBc9dyr6K_XIZogcw9VNE7Hu0timDOKav_hjHUHv_BnD3m71CN6VzXWojfASkH_HkhtREXvOchMvtdGHh_0rSUVmW1CRoQ5nNfcizQdGQ5qHVWZrl1xGeayHOf" />
+                <img alt="Innova Crysta" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/innova_crysta.png" />
               </div>
               <div className="p-8">
                 <div className="flex justify-between items-start mb-4">
@@ -272,7 +304,7 @@ export default function Home() {
             {/* Vehicle Card 2 */}
             <div className="bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-500 group">
               <div className="h-64 overflow-hidden">
-                <img alt="Toyota Fortuner" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Black Toyota Fortuner SUV on a scenic mountain road" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmfejINwmQDDz_QwE-vodi3JMU2VKihHuZXSFslbuJBy2v8oYtrDcm9yIIgeofeF6UeRwTCLQ3lYGT3tdjrJ23etFCSlZsIRWWZ4qZdodpO8I9HBWXgtqAKgwliGEOWtw2i4L3kIpqzAnD3I4-XGgu-B2x9D_DwlBehcULZYW3l2CfGLkb2mn3cgeZAJa3hhqH__8-7Q_GMiP3u5pENXkwLBgvSunT5O84z1Yx1bBqknMVrVE3hEl_hW8Y9BC_lirLaDJM32a1q7gW" />
+                <img alt="Toyota Fortuner" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=2000&auto=format&fit=crop" />
               </div>
               <div className="p-8">
                 <div className="flex justify-between items-start mb-4">
@@ -288,7 +320,7 @@ export default function Home() {
             {/* Vehicle Card 3 */}
             <div className="bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-500 group">
               <div className="h-64 overflow-hidden">
-                <img alt="Volvo Luxury Coach" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Large silver Volvo luxury coach for travel groups" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLvy753vvvZRT9iTitpbaLk2Nd9dSx0a-ecfZ-vBsKvHvdLienJvgkTaDdQm4_QicXXWZaL5uhHlzDdXUOJxkRaxuNiH8SI5UidaBuxPTUG_yEGAfKbS7ISdP_ykdYQeitjcPwBpaKTRBLurJe1VW74GoRegAzk75Re-qRQMDtpzoSjq5QaodIBVraxuvjF6SzlhvZu7y2A7x8olSZFqHPADuKp6USEJs2efrUgE3hpxTWusKGb_U-bIxw_VUQCS_J0pOViDc7qXFi" />
+                <img alt="Volvo Luxury Coach" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/volvo_bus.png" />
               </div>
               <div className="p-8">
                 <div className="flex justify-between items-start mb-4">
